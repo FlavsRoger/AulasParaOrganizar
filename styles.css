@@ -1,0 +1,73 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+  }
+
+  header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  header nav {
+    display: none;
+  }
+
+  header nav a {
+    text-decoration: black;
+     }
+  
+ .menu-hamburguer {
+    height: 30px;
+    width: 50px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+  }
+  
+.traco {
+    display: block;
+    background-color: black;
+    border-radius: 50px;
+    height: 3px;
+    margin: 4.25px 0;
+    width: 100%;
+}
+
+.traco-1, .traco-3 {
+    transform-origin: right center;
+}
+
+.menu-hamburguer.ativo .traco-1 {
+    transform: rotateZ(-45deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+    opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-1 {
+   transform: rotateZ(45deg);
+}
+
+
+.nav-menu-hamburguer {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10%;
+      transform: translateX(-100%);
+      transition: 1s;
+  }
+
+
+
+.visible {
+      transform: translateX(0);
+  }
+
+
